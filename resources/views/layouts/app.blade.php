@@ -19,15 +19,9 @@
     <link href="/css/footer.css" rel="stylesheet">
     <link href="/css/jquery-ui.min.css" rel="stylesheet">
     <link href="/css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="/css/highcharts.css" rel="stylesheet">
 
     <!-- BEGIN PLUGIN CSS -->
-    <link href="/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="/plugins/bootstrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
-    <link href="/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="/plugins/animate.min.css" rel="stylesheet" type="text/css" />
-    <link href="/plugins/jquery-scrollbar/jquery.scrollbar.css" rel="stylesheet" type="text/css" />
-    <link href="/css/uploadfile.css" rel="stylesheet">
+    <link href="/admintres/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
     <!-- END PLUGIN CSS -->
 
     @if(session('user'))
