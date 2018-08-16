@@ -15,33 +15,31 @@
     <!-- Styles -->
     <link href="/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/header.css" rel="stylesheet">
-    <link href="/css/footer.css" rel="stylesheet">
     <link href="/css/jquery-ui.min.css" rel="stylesheet">
     <link href="/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <!-- BEGIN PLUGIN CSS -->
-    <link href="/admintres/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/animate.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/fancy-buttons.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/filter.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/lightgallery.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/linea-icon.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/material-design-iconic-font.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/pe-icon-7-stroke.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/pe-icon-7-styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/simple-line-icons.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/themify-icons.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/footer.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/admintres/header.css" rel="stylesheet" type="text/css" media="screen" />
     <!-- END PLUGIN CSS -->
-
-    @if(session('user'))
-        <!-- BEGIN CORE CSS FRAMEWORK -->
-        <link href="/css/webarch.css" rel="stylesheet" type="text/css" />
-        <!-- END CORE CSS FRAMEWORK -->
-    @else
-        <link href="/css/login.css" rel="stylesheet" type="text/css" />
-    @endif
-
-    <link href="/css/style.css" rel="stylesheet">
 
     <script src="/js/jquery-1.12.4.min.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/jquery-ui.min.js"></script>
     <script src="/js/jquery.dataTables.min.js"></script>
     <script src="/js/jquery.priceformat.min.js"></script>
-    <script src="/js/highstock.js"></script>
     <script src="/js/spin.min.js"></script>
-    <script src="/js/jquery.uploadfile.min.js"></script>
 
     <!-- Scripts -->
     <script>
@@ -55,21 +53,66 @@
     @yield('content')
     @include('includes.footer')
 
-    <!-- BEGIN CORE JS FRAMEWORK-->
-    <script src="/plugins/pace/pace.min.js" type="text/javascript"></script>
-    <!-- END CORE JS FRAMEWORK -->
-
     <!-- BEGIN JS DEPENDECENCIES-->
-    <script src="/plugins/jquery-block-ui/jqueryblockui.min.js" type="text/javascript"></script>
-    <script src="/plugins/jquery-unveil/jquery.unveil.min.js" type="text/javascript"></script>
-    <script src="/plugins/jquery-scrollbar/jquery.scrollbar.min.js" type="text/javascript"></script>
-    <script src="/plugins/jquery-numberAnimate/jquery.animateNumbers.js" type="text/javascript"></script>
-    <script src="/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/plugins/bootstrap-select2/select2.min.js" type="text/javascript"></script>
+    <script src="/js/admintres/bootstrap-table-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/bootstrap-wysuhtml5-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/chartist-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/chartjs-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/cropperjs-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/dashboard-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/dashboard2-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/dataTables-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/db.js" type="text/javascript"></script>
+    <script src="/js/admintres/dropdown-bootstrap-extended.js" type="text/javascript"></script>
+    <script src="/js/admintres/dropzone-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/easypiechart-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/echart-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/ecommerce-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/editable-table-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/export-table-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/flot-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/footable-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/form-advance-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/form-file-upload-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/form-picker-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/form-wizard-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/form-xeditable-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/froogaloop2.min.js" type="text/javascript"></script>
+    <script src="/js/admintres/fullcalendar-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/gallery-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/gmap-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/init.js" type="text/javascript"></script>
+    <script src="/js/admintres/isotope.js" type="text/javascript"></script>
+    <script src="/js/admintres/jquery.slimscroll.js" type="text/javascript"></script>
+    <script src="/js/admintres/jsgrid-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/lightgallery-all.js" type="text/javascript"></script>
+    <script src="/js/admintres/modal-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/morris-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/nestable-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/owl-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/peity-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/product-cart-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/product-checkout-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/product-detail-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/productorders-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/rangeslider-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/responsive-datatable-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/simpleweather-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/skills-counter-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/sparkline-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/spectragram.min.js" type="text/javascript"></script>
+    <script src="/js/admintres/starrr.js" type="text/javascript"></script>
+    <script src="/js/admintres/summernote-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/sweetalert-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/tablesaw-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/tinymce-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/toast-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/treeview-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/twitterFetcher.js" type="text/javascript"></script>
+    <script src="/js/admintres/typeahead-js-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/vectormap-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/widgets-data.js" type="text/javascript"></script>
     <!-- END CORE JS DEPENDECENCIES-->
 
-    <!-- BEGIN CORE TEMPLATE JS -->
-    <script src="/js/webarch.js" type="text/javascript"></script>
-    <!-- END CORE TEMPLATE JS -->
 </body>
 </html>
