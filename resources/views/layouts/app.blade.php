@@ -18,6 +18,8 @@
     <link href="/css/jquery-ui.min.css" rel="stylesheet">
     <link href="/css/jquery.dataTables.min.css" rel="stylesheet">
 
+    <link href="/css/login.css" rel="stylesheet">
+
     <!-- BEGIN PLUGIN CSS -->
     <link href="/css/admintres/animate.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="/css/admintres/fancy-buttons.css" rel="stylesheet" type="text/css" media="screen" />
@@ -47,6 +49,7 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <!-- End Scripts -->
 </head>
 <body id="body">
     @include('includes.header')
@@ -54,8 +57,16 @@
     @include('includes.footer')
 
     <!-- BEGIN JS DEPENDECENCIES-->
+    <script src="/js/admintres/init.js" type="text/javascript"></script>
+    <script src="/js/admintres/morris-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/widgets-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/form-xeditable-data.js" type="text/javascript"></script>
     <script src="/js/admintres/bootstrap-table-data.js" type="text/javascript"></script>
     <script src="/js/admintres/bootstrap-wysuhtml5-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/jsgrid-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/mindmup-editabletable.js" type="text/javascript"></script>
+    <script src="/js/admintres/numeric-input-example.js" type="text/javascript"></script>
+    <script src="/js/admintres/editable-table-data.js" type="text/javascript"></script>
     <script src="/js/admintres/chartist-data.js" type="text/javascript"></script>
     <script src="/js/admintres/chartjs-data.js" type="text/javascript"></script>
     <script src="/js/admintres/cropperjs-data.js" type="text/javascript"></script>
@@ -68,7 +79,6 @@
     <script src="/js/admintres/easypiechart-data.js" type="text/javascript"></script>
     <script src="/js/admintres/echart-data.js" type="text/javascript"></script>
     <script src="/js/admintres/ecommerce-data.js" type="text/javascript"></script>
-    <script src="/js/admintres/editable-table-data.js" type="text/javascript"></script>
     <script src="/js/admintres/export-table-data.js" type="text/javascript"></script>
     <script src="/js/admintres/flot-data.js" type="text/javascript"></script>
     <script src="/js/admintres/footable-data.js" type="text/javascript"></script>
@@ -76,18 +86,14 @@
     <script src="/js/admintres/form-file-upload-data.js" type="text/javascript"></script>
     <script src="/js/admintres/form-picker-data.js" type="text/javascript"></script>
     <script src="/js/admintres/form-wizard-data.js" type="text/javascript"></script>
-    <script src="/js/admintres/form-xeditable-data.js" type="text/javascript"></script>
     <script src="/js/admintres/froogaloop2.min.js" type="text/javascript"></script>
     <script src="/js/admintres/fullcalendar-data.js" type="text/javascript"></script>
+    <script src="/js/admintres/lightgallery-all.js" type="text/javascript"></script>
     <script src="/js/admintres/gallery-data.js" type="text/javascript"></script>
     <script src="/js/admintres/gmap-data.js" type="text/javascript"></script>
-    <script src="/js/admintres/init.js" type="text/javascript"></script>
     <script src="/js/admintres/isotope.js" type="text/javascript"></script>
     <script src="/js/admintres/jquery.slimscroll.js" type="text/javascript"></script>
-    <script src="/js/admintres/jsgrid-data.js" type="text/javascript"></script>
-    <script src="/js/admintres/lightgallery-all.js" type="text/javascript"></script>
     <script src="/js/admintres/modal-data.js" type="text/javascript"></script>
-    <script src="/js/admintres/morris-data.js" type="text/javascript"></script>
     <script src="/js/admintres/nestable-data.js" type="text/javascript"></script>
     <script src="/js/admintres/owl-data.js" type="text/javascript"></script>
     <script src="/js/admintres/peity-data.js" type="text/javascript"></script>
@@ -111,7 +117,6 @@
     <script src="/js/admintres/twitterFetcher.js" type="text/javascript"></script>
     <script src="/js/admintres/typeahead-js-data.js" type="text/javascript"></script>
     <script src="/js/admintres/vectormap-data.js" type="text/javascript"></script>
-    <script src="/js/admintres/widgets-data.js" type="text/javascript"></script>
     <!-- END CORE JS DEPENDECENCIES-->
 
 </body>
